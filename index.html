@@ -8,7 +8,10 @@
     <meta name="mphtools-feature" content="compatibilityUI, cameraPrivacyPopup, compatibilityAutoCheck">
 </head>
 <body>
+
+  <header class="header">
     <h1 style="text-align:left; font-family: segoe ui;"> Analisis de Atencion </h1>
+  </header>
 <!--incluir alertas automáticas sobre la compatibilidad del navegador y la aplicación-->
 <script src="https://sdk.morphcast.com/mphtools/v1.0/mphtools.js"></script>
 <!--incluir MorphCast SDK-->
@@ -19,13 +22,10 @@
 <!--elementos de la pagina-->
 <!--<div><b>resultados</b></div>-->
 <div class="container">  
-  <div id="age" style="font-family: segoe ui;">Edad probable: -</div>
-  <div id="gender" style="font-family: segoe ui;">Genero probable: -</div>
-  <div id="emotion" style="font-family: segoe ui;">Emocion Dominante: -</div>
   <span style="font-family: segoe ui;">Histograma de Emociones:</span>
   <div id="chart"></div>
 
-  <span style="font-family: segoe ui;">Attention level:</span>
+  <span style="font-family: segoe ui;">Nivel de atencion:</span>
   <div id="myProgress">
       <div id="myBar"></div>
   </div>
@@ -35,7 +35,12 @@
   <div id="videoContainer">
     <video autoplay="true" id="videoElement">
     </video>
-  </div> 
+  </div>
+  <div class="text">
+    <div id="age" class="data" style="font-family: segoe ui;">Edad probable: -</div>
+    <div id="gender" class="data" style="font-family: segoe ui;">Genero probable: -</div>
+    <div id="emotion" class="data" style="font-family: segoe ui;">Emocion Dominante: -</div>
+  </div>
 </div>
 
 <div id="start_over">

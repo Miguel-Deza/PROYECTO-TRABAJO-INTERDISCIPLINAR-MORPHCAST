@@ -1,12 +1,37 @@
+body{
+	background-image: radial-gradient(circle, #b9fffc, #77e5fc, #3ac7ff, #3ea3fd, #7579e7);
+	color: #191D0E;
+}
 .container {
 	width: 600px;
 	float: left;
+	padding-left: 5rem;
 }
 
 .title {
 	font-size: 12pt;
 	font-weight: bold;
 }
+
+.header {
+	display: flex;
+	justify-content: center;
+	background-color: #7c0098;
+	margin-bottom: 2rem;
+}
+
+.text{
+	display:flex;
+	flex-wrap: wrap;
+	margin-left: 2rem;
+}
+
+.data{
+	display: flex;
+	width: 50%;
+	margin-top: 0.5rem;
+}
+
 #analysis {
 	width: 400px;
 	min-height: 240px;
@@ -45,24 +70,25 @@
 
 #myProgress {
 	width: 86%;
-	background-color: rgb(189, 185, 185);
+	background-color: #C8FFD4;
 }
 
 #myBar {
 	width: 1%;
 	height: 30px;
-	background-color: #d60088;
+	background-image: linear-gradient(to right, #051937, #004d7a, #008793, #00bf72, #a8eb12);
 }
 
 #videoContainer {
 	margin: 0px auto;
+	margin-bottom: 2rem;
 	width: 550px;
 	height: 450px;
-	border: 10px #aeadaf solid;
+	border: 10px #00C5B9 solid;
 }
 
 #videoElement {
 	width: 550px;
 	height: 450px;
-	background-color: rgb(189, 185, 185);
+	background-color: #00C5B9;
 }
